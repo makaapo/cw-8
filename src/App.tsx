@@ -8,12 +8,13 @@ const App = () => (
     <header>
       <Toolbar/>
     </header>
-    <main>
+    <main className="container-fluid">
       <Routes>
-        <Route path="/" element={<Quotes />}/>
+        <Route path="/" element={<Quotes />} />
+        <Route path="/quotes/:idCategory" element={<Quotes />} />
         <Route path="/add-quote" element={<MutateQuote />}/>
-        <Route path="/quotes/:id/edit" element={<MutateQuote/>}/>
-        <Route path="*" element={<h3 className="text-center fs-1">Not Found</h3>}/>
+        <Route path="/quotes/:id/edit" element={<MutateQuote />} />
+        <Route path="*" element={<h3 className="text-center fs-1">Not Found</h3>} />
       </Routes>
     </main>
   </>

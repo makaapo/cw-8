@@ -8,7 +8,7 @@ export interface ApiQuotes {
   [id: string]: ApiQuote;
 }
 
-export interface Post extends ApiQuote {
+export interface Quote extends ApiQuote {
   id: string;
 }
 

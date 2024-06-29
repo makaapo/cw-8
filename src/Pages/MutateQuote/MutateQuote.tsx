@@ -82,9 +82,9 @@ const MutateQuote = () => {
         <h4>{id ? 'Edit quote' : 'Submit new quote'}</h4>
         <div className="col-md-4 position-relative d-flex flex-column align-items-center text-center">
           <label className="form-label">Category</label>
-          <div className="input-group ms-5">
+          <div className="input-group">
             <select
-              className="ms-5"
+              className="form-select"
               name="category"
               value={quoteMutation.category}
               onChange={onFieldChange}
